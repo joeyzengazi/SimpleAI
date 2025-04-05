@@ -1,19 +1,19 @@
-# SimpleAI
+---
+title: "SimpleAI Installation"
+description: "Quick start guide for using the Mor.Rest documentation site"
+---
 
-A modern AI chat application built with Next.js and Mor.Rest integration.
+# SimpleAI Installation
 
-## Quick Start Guide
+This guide will help you quickly get started with the Mor.Rest documentation site.
 
-SimpleAI is a complete integration of Mor.Rest in a Next.js application, providing a powerful and easy-to-use chat interface.
+## Quick Start
 
-### Prerequisites
+The easiest way to get started is to use our sample project, SimpleAI. This project demonstrates a complete integration of Mor.Rest in a Next.js application.
 
-- Node.js (Latest LTS version recommended)
-- pnpm (recommended package manager)
+pnpm is the recommended package manager for SimpleAI installation.
 
-### Installation
-
-1. **Install pnpm** (if not already installed):
+To install pnpm:
 
 ```bash
 # Using npm
@@ -26,30 +26,28 @@ curl -fsSL https://get.pnpm.io/install.sh | sh -
 iwr https://get.pnpm.io/install.ps1 -useb | iex
 ```
 
-2. **Clone the Repository**:
+If you prefer to use npm instead of pnpm, you can replace `pnpm` commands with `npm` however you may face issues with production build.
+
+### 2. Clone the Repository
 
 ```bash
 git clone https://github.com/joeyzengazi/SimpleAI.git
 cd SimpleAI
 ```
 
-3. **Install Dependencies**:
+### 3. Install Dependencies
 
 ```bash
 pnpm install
 ```
 
-4. **Environment Setup**:
-
-Create a `.env` file in the root directory with your API keys and configuration. See `.env.example` for required variables.
-
-5. **Start Development Server**:
+### 4. Start the Development Server
 
 ```bash
 pnpm dev
 ```
 
-The application will be available at `http://localhost:3000`.
+The site will be available at `http://localhost:3000`. No additional configuration is needed.
 
 ## Building for Production
 
@@ -65,51 +63,55 @@ To start the production server:
 pnpm start
 ```
 
-## Features
-
-- Real-time chat interface
-- Mor.Rest API integration
-- Streaming responses
-- Error handling
-- Modern UI with Tailwind CSS
-- TypeScript support
-
-## Project Structure
-
-```
-SimpleAI/
-├── app/                    # Next.js app directory
-│   ├── api/               # API routes
-│   └── (preview)/         # Preview components
-├── components/            # React components
-├── public/               # Static assets
-└── ...config files       # Configuration files
-```
-
 ## Adding Chat Functionality
 
-The project includes a complete implementation of chat functionality using Mor.Rest. Key features include:
+If you want to add chat functionality to your own project, you can use the code from the [Mor.Rest API Integration](/docs/mor-rest-integration) guide. This guide provides:
 
 - API route handler for chat completions
 - Streaming implementation for real-time responses
 - Error handling and environment variable setup
 
+## Project Structure
+
+```
+simple-ai/
+├── app/
+│   ├── (preview)/
+│   │   ├── layout.tsx
+│   │   ├── page.tsx
+│   │   └── globals.css
+│   ├── api/
+│   │   └── chat/
+│   │       └── route.ts
+│   └── favicon.ico
+├── components/
+│   ├── icons.tsx
+│   └── markdown.tsx
+├── public/
+├── .env
+├── .env.example
+├── .eslintrc.json
+├── .gitignore
+├── LICENSE
+├── README.md
+├── next.config.mjs
+├── package.json
+├── postcss.config.mjs
+├── tailwind.config.ts
+└── tsconfig.json
+```
+
 ## Next Steps
 
-1. Configure your chat interface
-2. Learn about message handling
-3. Explore error handling
-4. Customize the UI to match your needs
+- [Configure your chat interface](/docs/basic-setup/setup)
+- [Explore streaming features](/docs/features/streaming)
 
 ## Support
 
 Need help? We're here for you:
 
-- [API Reference](https://mor.rest/docs)
-- [GitHub Repository](https://github.com/joeyzengazi/SimpleAI)
-- [Community Support](https://mor.rest/community)
+- [API Reference](https://mor.rest/api-reference)
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+This project is licensed under the MIT License - see the LICENSE file for details. 
