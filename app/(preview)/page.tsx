@@ -1,6 +1,6 @@
 "use client";
 
-import { BotIcon, UserIcon, RomeIcon } from "@/components/icons";
+import { BotIcon, UserIcon, SimpleAIIcon } from "@/components/icons";
 import { useState, useRef, useEffect } from "react";
 import { Markdown } from "@/components/markdown";
 import { motion, AnimatePresence } from "framer-motion";
@@ -97,14 +97,14 @@ export default function Home() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <div className="w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-br from-sky-500 to-teal-500 text-white">
-                <RomeIcon />
+                <SimpleAIIcon />
               </div>
               <span className="text-xl font-semibold bg-gradient-to-r from-sky-500 to-teal-500 bg-clip-text text-transparent">
-                Rome.ai
+                SimpleAI
               </span>
             </div>
             <div className="text-sm text-zinc-500 dark:text-zinc-400">
-              Powered by MOR.rest
+              Powered by Mor.Rest
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@ export default function Home() {
               transition={{ duration: 0.5 }}
               className="text-center text-zinc-500 dark:text-zinc-400"
             >
-              <h2 className="text-2xl font-semibold mb-2">Welcome to Rome.ai</h2>
+              <h2 className="text-2xl font-semibold mb-2">Welcome to SimpleAI</h2>
               <p>Start a conversation with our AI assistant</p>
             </motion.div>
           )}
