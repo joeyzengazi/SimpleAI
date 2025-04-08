@@ -41,7 +41,21 @@ cd SimpleAI
 pnpm install
 ```
 
-### 4. Start the Development Server
+### 4. Set Up Your API Key
+
+1. Rename the `.env.example` file to `.env`:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Open the `.env` file and replace the placeholder API key with your Mor.Rest API key:
+   ```
+   MOR_REST_API_KEY=your_api_key_here
+   ```
+
+   You can obtain an API key from the [Mor.Rest website](https://mor.rest).
+
+### 5. Start the Development Server
 
 ```bash
 pnpm dev
